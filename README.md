@@ -1,4 +1,5 @@
 # PosturePal - Your Personal AI Fitness Coach
+link to the kaggle notebook: 'https://www.kaggle.com/code/vrajnandaknangunoori/posturedetectorcorrector/edit'
 
 ## To run
 Clone the repo and 'python app.py' and visit the local link generated.
