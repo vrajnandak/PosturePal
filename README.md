@@ -8,13 +8,13 @@ link to the kaggle notebook: 'https://www.kaggle.com/code/vrajnandaknangunoori/p
 The below 3 clips are from the processed video. For viewing the entire processed video, download from 'PostureDetection_Processed.mp4' file.
 
 Displaying the PushUps clip.
-![Processed-Video-containing-exercises-pushUps-lateralRaise-legExtension-clip1](PostureDetection_Processed_CLIP1.mp4)
+![Processed-Video-containing-exercises-pushUps-lateralRaise-legExtension-clip1](https://github.com/user-attachments/assets/c4304982-6622-465b-a9af-0a8be45458ba)
 
 Displaying the Lateral Raise clip.
-![Processed-Video-containing-exercises-pushUps-lateralRaise-legExtension-clip1](PostureDetection_Processed_CLIP2.mp4)
+![Processed-Video-containing-exercises-pushUps-lateralRaise-legExtension-clip1](https://github.com/user-attachments/assets/caebba91-d6ec-4903-99e4-8c9a4b8646c3)
 
 Displaying the Leg Extension clip.
-![Processed-Video-containing-exercises-pushUps-lateralRaise-legExtension-clip1](PostureDetection_Processed_CLIP3.mp4)
+![Processed-Video-containing-exercises-pushUps-lateralRaise-legExtension-clip1](https://github.com/user-attachments/assets/eb2f8fab-17ea-4f7d-922f-7a4a971453b0)
 
 **PosturePal** automates exercise tracking and guidance, ensuring users can focus on their exercises while receiving real-time feedback. The system uses advanced computer vision techniques to recognize exercises, count repetitions, analyze posture, and track progress.
 
