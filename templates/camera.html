@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosturePal - Get Started</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Get Started with Real-Time Posture Detection</h1>
+        <p>Activate your camera to get live feedback on your posture.</p>
+        
+        <video id="video" autoplay></video>
+        <br>
+        <button id="startBtn">Start Recording</button>
+        <button id="endBtn" disabled>End Recording</button>
+        <a id="downloadLink" style="display: none;">Download Video</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PosturePal | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        const video = document.getElementById('video');
+        const startBtn = document.getElementById('startBtn');
+        const endBtn = document.getElementById('endBtn');
+        const downloadLink = document.getElementById('downloadLink');
+
+        let mediaStream = null;
+        let mediaRecorder = null;
+        let recordedChunks = [];
+
+        // Function to start camera and show video feed
+        function startCamera() {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                    video.srcObject = stream;
+                    mediaStream = stream;
+                })
+                .catch(function (error) {
+                    console.error('Error accessing camera: ', error);
+                });
+        }
+
+        // Function to start recording
+        function startRecording() {
+            recordedChunks = []; // Reset the recorded chunks
+            mediaRecorder = new MediaRecorder(mediaStream);
+
+            mediaRecorder.ondataavailable = function (event) {
+                if (event.data.size > 0) {
+                    recordedChunks.push(event.data);
+                }
+            };
+
+            mediaRecorder.onstop = function () {
+                const blob = new Blob(recordedChunks, { type: 'video/webm' });
+                const url = URL.createObjectURL(blob);
+                downloadLink.href = url;
+                downloadLink.download = 'recording.webm';
+                downloadLink.style.display = 'block';
+                downloadLink.innerText = 'Download Video';
+            };
+
+            mediaRecorder.start();
+            startBtn.disabled = true;
+            endBtn.disabled = false;
+        }
+
+        // Function to stop recording
+        function endRecording() {
+            mediaRecorder.stop();
+            mediaStream.getTracks().forEach(track => track.stop());
+            endBtn.disabled = true;
+        }
+
+        // Start button event listener
+        startBtn.addEventListener('click', function () {
+            startCamera();
+            startRecording();
+        });
+
+        // End button event listener
+        endBtn.addEventListener('click', function () {
+            endRecording();
+        });
+
+        // Initialize button states
+        startBtn.disabled = false;
+        endBtn.disabled = true;
+    </script>
+</body>
+</html>

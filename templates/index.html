@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosturePal - Your personal AI Fitness Coach</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- <h1>Welcome to PosturePal</h1> -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="{{ url_for('camera') }}">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h1>About PosturePal</h1>
+        <p>PosturePal is your smart AI-powered fitness coach, offering real-time posture correction, rep counting, and motivation to help you stay active and healthy.</p>
+    </section>
+
+    <section id="achievements" class="section">
+        <h1>Achievements</h1>
+        <p>Our platform has helped hundreds of users improve their fitness journey through posture correction and real-time feedback.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, feel free to <a href="mailto:support@posturepal.com">reach out to us</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PosturePal | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
