@@ -3,7 +3,7 @@ link to the kaggle notebook: 'https://www.kaggle.com/code/vrajnandaknangunoori/p
 
 ![pushups-sample-out-ezgif com-optimize](https://github.com/user-attachments/assets/47cd3d88-b9eb-43c8-8fc1-068aace59706)
 
-![Processed-Video-containing-exercises-of-pushUps-lateralRaise-legExtension](PostureDetection_Processed_compressedVideo.mp4)
+![Processed-Video-containing-exercises-of-pushUps-lateralRaise-legExtension](https://github.com/vrajnandak/PosturePal/blob/main/PostureDetection_Processed.mp4)
 
 The below 3 clips are from the processed video. For viewing the entire processed video, download from 'PostureDetection_Processed.mp4' file.
 
