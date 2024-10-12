@@ -1,6 +1,8 @@
 # PosturePal - Your Personal AI Fitness Coach
 link to the kaggle notebook: 'https://www.kaggle.com/code/vrajnandaknangunoori/posturedetectorcorrector/edit'
 
+![pushups-sample-out-ezgif com-optimize](https://github.com/user-attachments/assets/47cd3d88-b9eb-43c8-8fc1-068aace59706)
+
 **PosturePal** automates exercise tracking and guidance, ensuring users can focus on their exercises while receiving real-time feedback. The system uses advanced computer vision techniques to recognize exercises, count repetitions, analyze posture, and track progress.
 
 ## Key Features
