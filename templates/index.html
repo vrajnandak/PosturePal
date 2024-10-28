@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <!-- <h1>Welcome to PosturePal</h1> -->
     <header>
         <nav>
             <ul>
@@ -20,12 +19,30 @@
     </header>
 
     <section id="about" class="section">
-        <h1>About PosturePal</h1>
-        <p>PosturePal is your smart AI-powered fitness coach, offering real-time posture correction, rep counting, and motivation to help you stay active and healthy.</p>
+        <video autoplay muted loop id="bg-video">
+            <source src="{{ url_for('static', filename='video/bg_video.mp4') }}" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        
+        <div class="about-content">
+            <h1>About PosturePal</h1>
+            <p>PosturePal is your smart AI-powered fitness coach, offering real-time posture correction, rep counting, and motivation to help you stay active and healthy.</p>
+        </div>
     </section>
+    
+        <section id="Working" class="section">
+            <h2>Working</h2>
+            <p>The working behind the application involves the use of some pre-processing methods and a modified version of the 'KNN' algorithm i.e., K-Nearest Neighbors. The algorithm first detects the body landmarks using mediapipe and then converts them into an embedding. This embedding is used against the embeddings of the dataset containing the best pose images and then classifies the user's pose.</p>
+            <div class="img_container" style="padding-top: 3rem;">
+                <img
+                    class="bg_image"
+                    src="{{ url_for('static',filename='video/bg_image.png')}}"
+                >
+            </div>
+        </section>
 
     <section id="achievements" class="section">
-        <h1>Achievements</h1>
+        <h2>Achievements</h2>
         <p>Our platform has helped hundreds of users improve their fitness journey through posture correction and real-time feedback.</p>
     </section>
 
