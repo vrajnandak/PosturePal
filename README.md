@@ -18,7 +18,12 @@ https://github.com/user-attachments/assets/d5611251-b60f-4173-ad67-8c0c62684092
 - **Seamless Exercise Switching**: Allows for smooth transitions between exercises during your workout.
 - **Advanced Analysis Tools**: Analyze your workout with visualized data to identify areas for improvement.
 
+## Dataset Used
+The following dataset from kaggle has been used which contains videos of various workouts 'https://www.kaggle.com/datasets/hasyimabdillah/workoutfitness-video'.
+
 ## Architecture Overview
+
+![bg_image](https://github.com/user-attachments/assets/97642847-4157-4067-9f7c-297015c3dd1f)
 
 ### FullBodyPoseEmbedder
 The `FullBodyPoseEmbedder` class converts 3D pose landmarks into a 3D embedding for pose analysis or classification. It normalizes the input landmarks by adjusting for translation (centered around the hips) and scaling (based on torso size or maximum distance to the pose center). The embedding captures key spatial relationships between body parts.
