@@ -21,6 +21,12 @@ https://github.com/user-attachments/assets/d5611251-b60f-4173-ad67-8c0c62684092
 ## Dataset Used
 The following dataset from kaggle has been used which contains videos of various workouts 'https://www.kaggle.com/datasets/hasyimabdillah/workoutfitness-video'.
 
+## Tech Stack
+- python
+- computer vision
+- mediapipe framework
+- kaggle
+
 ## Architecture Overview
 
 ![bg_image](https://github.com/user-attachments/assets/97642847-4157-4067-9f7c-297015c3dd1f)
@@ -44,7 +50,7 @@ The `BootstrapHelper` class handles the initialization of the model by loading t
 The 'ExerciseTracker' helps maintain the reps of each exercise by maintaing a RepetitionCounter for each of the intermediate states in a pose and gives real-time guidance using the same.
 
 ## To run
-Clone the repo and 'python app.py' and visit the local link generated.
+Clone the repo and run the command 'python app.py' on your terminal. Visit the local link generated to be able to use the application.
 
 ## What it does
 The app/website accesses the device's camera and records users as they exercise in real-time. It automatically detects the exercise being performed, eliminating the need for users to manually specify their workout. Using machine learning algorithms like KNN classification and computer vision models and pre-processing techniques, it accurately identifies the exercise and tracks the number of reps. The standout feature is its real-time audio and visual feedback, which guides users on improving their posture and form. Additionally, the platform includes a community forum where users can share tips and advice. It also features a fun mini-game where participants earn coins for completing exercises correctly. These coins can later be used to unlock premium features that will be introduced on the platform.
