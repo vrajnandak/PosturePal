@@ -29,7 +29,7 @@ The following dataset from kaggle has been used which contains videos of various
 
 ## Architecture Overview
 
-![bg_image](https://github.com/user-attachments/assets/97642847-4157-4067-9f7c-297015c3dd1f)
+<img width="1275" alt="Image" src="https://github.com/user-attachments/assets/45518d43-a1d9-4bd7-b531-a0c84e29b478" />
 
 ### FullBodyPoseEmbedder
 The `FullBodyPoseEmbedder` class converts 3D pose landmarks into a 3D embedding for pose analysis or classification. It normalizes the input landmarks by adjusting for translation (centered around the hips) and scaling (based on torso size or maximum distance to the pose center). The embedding captures key spatial relationships between body parts.
